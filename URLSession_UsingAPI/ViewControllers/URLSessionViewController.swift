@@ -1,2 +1,14 @@
 import UIKit
-// ListView 생성
+import SwiftUI
+
+class URLSessionViewController: UIViewController, PreviewProvider {
+    
+    static var previews: some View {
+        URLSessionViewController().toPreview()
+    }
+    
+    override func viewDidLoad() {
+        view.backgroundColor = .systemPurple
+    }
+    
+}

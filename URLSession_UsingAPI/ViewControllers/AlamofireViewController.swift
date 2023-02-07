@@ -1,2 +1,13 @@
 import UIKit
-// List View 생성
+import SwiftUI
+
+class AlamofireViewController : UIViewController, PreviewProvider {
+    
+    static var previews: some View {
+        AlamofireViewController().toPreview()
+    }
+    
+    override func viewDidLoad() {
+        view.backgroundColor = .systemIndigo
+    }
+}
