@@ -4,8 +4,7 @@ struct UserDatas: Codable {
     var results: [RandomUser]
 }
 
-struct RandomUser: Codable, Identifiable {
-    var id = UUID()
+struct RandomUser: Codable {
     let name: Name
     let email: String
     

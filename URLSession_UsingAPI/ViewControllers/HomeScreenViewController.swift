@@ -7,9 +7,14 @@ class HomeScreenViewController: UIViewController {
     // Two Button & Connect Navigator
     let AlamofireButton = UIButton()
     let URLSessionButton = UIButton()
+    let url = "https://randomuser.me/api/?results=50&inc=name,email"
+    @ObservedObject var AlamoNetworking = networkingClass()
+    @ObservedObject var URLSessionNetworking = networkingClass()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        AlamoNetworking.alamofireNetworking(url: url)
+        URLSessionNetworking.urlSessionNetworking(url: url)
         setButtons()
         setLayout()
     }
@@ -47,11 +52,13 @@ class HomeScreenViewController: UIViewController {
     
     @objc func AlamofireButtonAction(){
         let vc = AlamofireViewController()
+        vc.dataArray = AlamoNetworking.randomUser
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @objc func URLSessionButtonAction(){
         let vc = URLSessionViewController()
+        vc.dataArray = URLSessionNetworking.randomUser
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		30E29F901CDB9ED0A24BEA37 /* Pods_URLSession_UsingAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 491D415B9AB05C14507850A0 /* Pods_URLSession_UsingAPI.framework */; };
+		801A7B8329935E3B00F23D44 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801A7B8229935E3B00F23D44 /* TableViewCell.swift */; };
 		801AA9B52992650500177D21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801AA9B42992650500177D21 /* AppDelegate.swift */; };
 		801AA9B72992650500177D21 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801AA9B62992650500177D21 /* SceneDelegate.swift */; };
 		801AA9B92992650500177D21 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801AA9B82992650500177D21 /* HomeScreenViewController.swift */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		0C7A6A23C2E330E53C811DC3 /* Pods-URLSession_UsingAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URLSession_UsingAPI.debug.xcconfig"; path = "Target Support Files/Pods-URLSession_UsingAPI/Pods-URLSession_UsingAPI.debug.xcconfig"; sourceTree = "<group>"; };
 		491D415B9AB05C14507850A0 /* Pods_URLSession_UsingAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_URLSession_UsingAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		801A7B8229935E3B00F23D44 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		801AA9B12992650500177D21 /* URLSession_UsingAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = URLSession_UsingAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		801AA9B42992650500177D21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		801AA9B62992650500177D21 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				801AA9B82992650500177D21 /* HomeScreenViewController.swift */,
 				80A4494C2992665500AB3BD4 /* AlamofireViewController.swift */,
 				80A4494E2992669400AB3BD4 /* URLSessionViewController.swift */,
+				801A7B8229935E3B00F23D44 /* TableViewCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				801A7B8329935E3B00F23D44 /* TableViewCell.swift in Sources */,
 				801AA9B92992650500177D21 /* HomeScreenViewController.swift in Sources */,
 				80A4494B2992663F00AB3BD4 /* Networking.swift in Sources */,
 				80A449522992707800AB3BD4 /* Preview.swift in Sources */,
